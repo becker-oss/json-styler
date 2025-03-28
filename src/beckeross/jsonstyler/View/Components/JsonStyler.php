@@ -28,7 +28,5 @@ class JsonStyler extends Component
             'formattedJson' => $this->styler->formatJson($this->data),
             'themeConfig' => $this->styler->getTheme(),
         ]);
-
     }
-
 }

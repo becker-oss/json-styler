@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-composer require beckeross/json-styler
+composer require becker-oss/json-styler
 ```
 
 ## Using the Component

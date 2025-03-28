@@ -12,7 +12,6 @@ class JsonStylerRepository
         $this->themes = $themes ?? config('jsonstyler', []);
     }
 
-
     public function setTheme(string $theme): void
     {
         if (isset($this->themes[$theme])) {
