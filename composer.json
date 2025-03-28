@@ -1,0 +1,36 @@
+{
+    "name": "becker-oss/json-styler",
+    "description": "Component to properly style Json Strings.",
+    "keywords": ["php", "laravel", "json"],
+    "type": "library",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "laravel/framework": "^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "beckeross\\": "src/beckeross/"
+        }
+    },
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Corvin Spohn",
+            "email": "corvin.spohn@lagertechnik-becker.de"
+        },
+        {
+            "name": "Fabian Stappen",
+            "email": "fabian.stappen@lagertechnik-becker.de"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "beckeross\\jsonstyler\\Providers\\LaravelJsonStylerServiceProvider"
+            ]
+        }
+    }
+}
