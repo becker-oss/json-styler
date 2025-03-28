@@ -9,7 +9,7 @@
 ## Installation
 
 ```sh
-composer require beckeross/laravel-json-styler
+composer require beckeross/json-styler
 ```
 
 ## Using the Component
