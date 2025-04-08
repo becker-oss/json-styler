@@ -58,7 +58,6 @@ class JsonStylerRepository
                 $merged['custom_keywords'][$word] = $cleanUp($color);
             }
         }
-
         return $merged;
     }
 
