@@ -61,18 +61,17 @@ class JsonStylerRepository
         return $merged;
     }
 
-    public function formatJson(array|string $data): string
+    public function formatJson(array|string|null $data): string
     {
+        if ($data === null) {
+            return "<pre><code class='json'>No data available.</code></pre>";
+        }
         if (is_string($data)) {
             $decoded = json_decode($data, true);
             if ($decoded === null && json_last_error() !== JSON_ERROR_NONE) {
                 return "<pre><code class='json'>Invalid JSON: " . htmlspecialchars(json_last_error_msg()) . "</code></pre>";
             }
             $data = $decoded;
-        }
-
-        if ($data === null) {
-            return "<pre><code class='json'>No data available.</code></pre>";
         }
 
         $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
