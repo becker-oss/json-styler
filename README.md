@@ -34,11 +34,13 @@ If no theme is given , it will use the default theme of the config:
     ],
 ```
 
+if the given theme is incomplete, it will merge the missing entrys from an duplicate entry of the default theme (hardcoded).
+
 ## Customizing
 
 Standard options are 
 - dark
-- default (white)
+- default (light mode)
 
 
 To further customize themes and adding custom keywords:
@@ -85,4 +87,3 @@ or use a variable for changing themes like this :
 ```
 ## Finally
 You can now customize the coloroutput of the Json Styler component and integrate it into your code.
-r too small can slow down your app - try to start with 4

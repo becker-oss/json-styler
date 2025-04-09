@@ -7,11 +7,16 @@
         "php": "^8.3"
     },
     "require-dev": {
-        "laravel/framework": "^12"
+        "phpunit/phpunit": "^10"
     },
     "autoload": {
         "psr-4": {
             "beckeross\\": "src/beckeross/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "beckeross\\tests\\": "tests/beckeross/"
         }
     },
     "minimum-stability": "stable",
